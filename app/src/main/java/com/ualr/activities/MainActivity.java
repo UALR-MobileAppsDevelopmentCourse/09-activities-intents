@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onButtonClick(View view) {
         Intent intent = new Intent(this, TargetActivity.class);
+        // TODO 01: put extras in the bundle
         intent.putExtra(EXTRA_NAME, "Ivan");
         intent.putExtra(EXTRA_AGE, 34);
         startActivity(intent);
