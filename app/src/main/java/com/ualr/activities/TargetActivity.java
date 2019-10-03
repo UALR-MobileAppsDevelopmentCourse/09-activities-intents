@@ -17,11 +17,6 @@ public class TargetActivity extends Activity {
         setContentView(R.layout.activity_target);
 
         Intent intent = getIntent();
-        // TODO 03. Get extras from the bundle
-        String name = intent.getStringExtra(MainActivity.EXTRA_NAME);
-        int age = intent.getIntExtra(MainActivity.EXTRA_AGE, -1);
 
-        TextView resultTV = findViewById(R.id.result);
-        resultTV.setText(String.format("%s is %d years old", name, age));
     }
 }
