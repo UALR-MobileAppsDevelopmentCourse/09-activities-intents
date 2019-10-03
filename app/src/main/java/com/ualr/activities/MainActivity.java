@@ -8,9 +8,6 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String EXTRA_NAME = "name";
-    public static final String EXTRA_AGE = "age";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,10 +15,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
+        // TODO 03. Create an Intent instance
         Intent intent = new Intent(this, TargetActivity.class);
-        // TODO 01: put extras in the bundle
-        intent.putExtra(EXTRA_NAME, "Ivan");
-        intent.putExtra(EXTRA_AGE, 34);
+        // TODO 04. Invoke the startActivity method
         startActivity(intent);
     }
 }
