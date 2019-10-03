@@ -8,8 +8,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String EXTRA_NAME = "name";
-    public static final String EXTRA_AGE = "age";
+    public static final String EXTRA_PERSON = "PersonData";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onButtonClick(View view) {
         Intent intent = new Intent(this, TargetActivity.class);
-        intent.putExtra(EXTRA_NAME, "Ivan");
-        intent.putExtra(EXTRA_AGE, 34);
+        // TODO 06. We create a new instance of the defined class
+        // TODO 07. We add the object as extras to the intent
         startActivity(intent);
     }
 }
