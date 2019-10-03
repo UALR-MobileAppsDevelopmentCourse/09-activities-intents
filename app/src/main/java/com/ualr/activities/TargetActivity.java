@@ -8,7 +8,6 @@ import androidx.annotation.Nullable;
 /**
  * Created by irconde on 2019-10-02.
  */
-// TODO 01. Create the target activity
 public class TargetActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
