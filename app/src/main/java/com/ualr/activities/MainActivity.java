@@ -1,15 +1,17 @@
 package com.ualr.activities;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String EXTRA_NAME = "name";
-    public static final String EXTRA_AGE = "age";
+    static final int QR_CODE_REQUEST = 1;
+    static final String QR_CODE_KEY = "QRCode";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +20,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        Intent intent = new Intent(this, TargetActivity.class);
-        intent.putExtra(EXTRA_NAME, "Ivan");
-        intent.putExtra(EXTRA_AGE, 34);
-        startActivity(intent);
+        // TODO 01. We must launch new activity using startActivityForResult.
+        //  Important: we must specify a request code
     }
+    
+    // TODO 05. Get data sent from the second activity: override onActivityResult method
+
 }

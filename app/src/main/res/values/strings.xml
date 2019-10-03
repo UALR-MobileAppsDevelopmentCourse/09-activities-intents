@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Activities</string>
+    <string name="go_to_button">second activity</string>
+    <string name="return_button">return qr code</string>
+    <string name="qr_code_placeholder">·· QR code here ··</string>
 </resources>
