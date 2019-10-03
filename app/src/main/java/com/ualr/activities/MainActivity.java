@@ -8,6 +8,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    // TODO 01: Define key values for the intent's extras
     public static final String EXTRA_NAME = "name";
     public static final String EXTRA_AGE = "age";
 
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onButtonClick(View view) {
         Intent intent = new Intent(this, TargetActivity.class);
-        // TODO 01: put extras in the bundle
+        // TODO 02: put extras in the bundle
         intent.putExtra(EXTRA_NAME, "Ivan");
         intent.putExtra(EXTRA_AGE, 34);
         startActivity(intent);
