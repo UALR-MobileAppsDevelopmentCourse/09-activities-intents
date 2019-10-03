@@ -15,8 +15,10 @@ public class TargetActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_target);
+        // TODO 08. We get the object from the intent
+        Person p = getIntent().getParcelableExtra(MainActivity.EXTRA_PERSON);
 
-        Intent intent = getIntent();
-
+        TextView resultTV = findViewById(R.id.result);
+        resultTV.setText(String.format("%s is %d years old", p.getName(), p.getAge()));
     }
 }
