@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TargetActivity"></activity>
+        <!-- TODO 03. Add the target activity to the manifest -->
     </application>
 
 </manifest>
