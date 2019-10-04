@@ -2,6 +2,7 @@ package com.ualr.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.SearchManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -16,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        String phoneNumberUri = "tel:501-432-4129";
-        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(phoneNumberUri));
+        Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
+        intent.putExtra(SearchManager.QUERY, "Computer Science Department UALR");
         startActivity(intent);
     }
 
