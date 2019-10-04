@@ -15,14 +15,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        String emailSubject = "Department Meeting";
-        String emailText = "We will discuss new curriculum "
-                + "on Tue. at 9:00am @ room BU340";  String emailReceiverList[] = {"vmchau@ualr.edu"};
-        Intent intent = new Intent(Intent.ACTION_SEND);  intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_EMAIL, emailReceiverList);
-        intent.putExtra(Intent.EXTRA_SUBJECT, emailSubject);
-        intent.putExtra(Intent.EXTRA_TEXT, emailText);
-        startActivity(Intent.createChooser(intent, "To complete action choose:"));
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+        sendIntent.setType("text/plain");
+        Intent shareIntent = Intent.createChooser(sendIntent, null);
+        startActivity(shareIntent);
     }
 
 }
