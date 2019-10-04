@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, TargetActivity.class);
         startActivityForResult(intent, QR_CODE_REQUEST);
     }
-
+    
     // TODO 05. Get data sent from the second activity
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
