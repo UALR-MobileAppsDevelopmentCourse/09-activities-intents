@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        String smsUri = "smsto:501-432-4129";
-        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse(smsUri));
-        intent.putExtra("sms_body", "Have you done last week's homework?");
+        Intent intent = new Intent();
+        intent.setType("images/pictures/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivity(intent);
     }
 

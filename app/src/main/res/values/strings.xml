@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Activities</string>
-    <string name="go_to_button">open dialer</string>
+    <string name="display_pictures">display pictures</string>
 </resources>
