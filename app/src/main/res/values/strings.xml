@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Activities</string>
-    <string name="open_location">open location</string>
+    <string name="open_route">open route</string>
 </resources>

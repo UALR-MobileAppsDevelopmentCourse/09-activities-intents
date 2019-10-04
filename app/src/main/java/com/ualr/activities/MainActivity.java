@@ -16,8 +16,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        String geoCode = "geo:42.336408, -7.863180?z=16";
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoCode));
+        String startPoint = "42.322591, -7.865459";
+        String endPoint= "42.344961, -7.856006";
+        String routeUri = String.format("http://maps.google.com/maps?saddr=%s&daddr=%s", startPoint, endPoint);
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(routeUri));
         startActivity(intent);
     }
 
