@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        Intent intent = new Intent(android.provider.Settings.ACTION_SETTINGS);
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.setClassName("com.android.settings","com.android.settings.LanguageSettings");
         startActivity(intent);
     }
 

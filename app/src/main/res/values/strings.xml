@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Activities</string>
-    <string name="open_settings">open settings</string>
+    <string name="open_language_settings">open language settings</string>
 </resources>
