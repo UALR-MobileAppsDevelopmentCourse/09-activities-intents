@@ -16,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        String webUri = "https://ualr.edu/";
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(webUri));
+        String place = "University of Arkansas at Little Rock";
+        String placeUri = String.format("geo:0,0?q=(%s)", place);
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(placeUri));
         startActivity(intent);
     }
 
