@@ -2,7 +2,6 @@ package com.ualr.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.SearchManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -17,9 +16,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        Intent intent = new Intent();
-        intent.setType("images/pictures/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
+        String contactsData = "content://contacts/people/";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(contactsData));
         startActivity(intent);
     }
 

@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Activities</string>
-    <string name="display_pictures">display pictures</string>
+    <string name="show_contacts">Show contacts</string>
 </resources>
