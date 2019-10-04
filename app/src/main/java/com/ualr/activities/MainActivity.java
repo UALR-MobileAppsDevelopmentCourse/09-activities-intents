@@ -17,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
-        intent.putExtra(SearchManager.QUERY, "Computer Science Department UALR");
+        String smsUri = "smsto:501-432-4129";
+        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse(smsUri));
+        intent.putExtra("sms_body", "Have you done last week's homework?");
         startActivity(intent);
     }
 
