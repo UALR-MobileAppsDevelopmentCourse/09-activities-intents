@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Activities</string>
-    <string name="open_route">open route</string>
+    <string name="open_music_player">open music player</string>
 </resources>
