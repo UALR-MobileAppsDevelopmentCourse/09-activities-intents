@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        // TODO 03. Create an Intent instance
+        // TODO 04. Create an Intent instance
         Intent intent = new Intent(this, TargetActivity.class);
-        // TODO 04. Invoke the startActivity method
+        // TODO 05. Invoke the startActivity method
         startActivity(intent);
     }
 }
