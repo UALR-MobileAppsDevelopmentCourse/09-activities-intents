@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == CONTACT_REQUEST_CODE) {
             if (resultCode == Activity.RESULT_OK) {
                 String returnedData = data.getDataString();
-                // TODO 02. Once a contact has been selected, we get the returned data an put it in the bundle
+                // TODO 02. Once a contact has been selected, we get the returned data and put it in the bundle
                 // of other intent to get the information of the corresponding contact
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(returnedData));
                 startActivity(intent);
