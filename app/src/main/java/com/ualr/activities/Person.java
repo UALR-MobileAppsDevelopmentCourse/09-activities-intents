@@ -53,6 +53,7 @@ public class Person implements Parcelable {
         return 0;
     }
 
+    
     // TODO 05. Note that we have to follow the same order both when we put and get data in and from the parcel
     @Override
     public void writeToParcel(Parcel parcel, int i) {
