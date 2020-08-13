@@ -1,8 +1,5 @@
 package com.ualr.activities;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
 /**
  * Created by irconde on 2019-10-03.
  */
