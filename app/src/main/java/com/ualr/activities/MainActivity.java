@@ -16,9 +16,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onButtonClick(View view) {
         Intent sendIntent = new Intent();
+        // TODO 01. For all types of sharing, create an intent and set its action to Intent.ACTION_SEND
         sendIntent.setAction(Intent.ACTION_SEND);
         sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
         sendIntent.setType("text/plain");
+        // TODO. In order to display the Android Sharesheet you need to call Intent.createChooser() , passing it your Intent object
         Intent shareIntent = Intent.createChooser(sendIntent, null);
         startActivity(shareIntent);
     }
